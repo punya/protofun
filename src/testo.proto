@@ -2,9 +2,11 @@ syntax = "proto3";
 
 package testo;
 
+message Bar {
+    int32 baz = 1;
+}
+
 message Foo {
-    string cheese = 1;
-    optional string salami = 2;
-    uint32 ham = 3;
-    optional uint32 pickle = 4;
+    Bar bar = 1;
+    optional Bar maybe_bar = 2;
 }
