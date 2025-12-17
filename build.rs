@@ -1,6 +1,8 @@
-use std::io::Result;
+use protobuf_codegen::CodeGen;
 
-fn main() -> Result<()> {
-    prost_build::compile_protos(&["src/testo.proto"], &["src/"])?;
-    Ok(())
+fn main() {
+    CodeGen::new()
+        .inputs(["proto/testo.proto"])
+        .generate_and_compile()
+        .unwrap();
 }
