@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-prost = "0.14"
+protobuf = "4.33.2-release"
 
 [build-dependencies]
-prost-build = "0.14.1"
+protobuf-codegen = "4.33.2-release"
