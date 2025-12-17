@@ -61,11 +61,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "protobuf-well-known-types"
+version = "4.33.2-release"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "81c12a79694fb187d76a1fe24ddbc56aceecac2d78956dc3a740a46d636ac4ff"
+dependencies = [
+ "protobuf",
+ "protobuf-codegen",
+]
+
+[[package]]
 name = "protofun"
 version = "0.1.0"
 dependencies = [
  "protobuf",
  "protobuf-codegen",
+ "protobuf-well-known-types",
 ]
 
 [[package]]
